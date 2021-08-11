@@ -1,1 +1,11 @@
-{}
+{
+    "home.analytics_data": "Analytics Data",
+    "home.rpcService": "RPC Service",
+    "home.node_operations": "Node Operations",
+    "home.subject": "Real-time Analytics for Blockchains",
+    "home.desc": "ChainAnalytics is an analytics protocol for blockchain networks like Ethereum, BSC, IoTeX. We committed to provide advanced analytics for explorers, Dapps, and research analysis.",
+    "home.gb_to_serve": "GB READY TO SERVE",
+    "home.queries_served": "QUERIES SERVED",
+    "home.dapps_intergated": "DAPPS INTEGRATED",
+    "home.learn_more": "Learn more"
+}

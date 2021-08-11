@@ -1,0 +1,11 @@
+{
+    "home.analytics_data": "分析数据",
+    "home.rpcService": "RPC服务",
+    "home.node_operations": "Node运营",
+    "home.subject": "区块链实时分析",
+    "home.desc": "ChainAnalytics是一个针对Ethereum、BSC、IoTeX等区块链网络的分析协议。我们致力于为探索者、Dapps和研究分析提供高级分析。",
+    "home.gb_to_serve": "准备提供的GB",
+    "home.queries_served": "服务的查询数",
+    "home.dapps_intergated": "集成的DAPP数",
+    "home.learn_more": "学习更多"
+}

@@ -105,7 +105,7 @@ const Statistics = ({ title, value, ...restProps }: StatisticsPorps) => {
 };
 
 function Home() {
-  const { base } = useStore();
+  const { base, lang } = useStore();
   const setPlatformStyle = usePlatform();
   useEffect(() => {
     const browser = helper.browser();
@@ -158,7 +158,7 @@ function Home() {
               }
             )}
           >
-            <Label src="/images/home_analytics.png" text="Analytics Data" />
+            <Label src="/images/home_analytics.png" text={lang.t(`home.analytics_data`)} />
             <Label
               {...setPlatformStyle(
                 {},
@@ -167,7 +167,7 @@ function Home() {
                 }
               )}
               src="/images/home_rpc.png"
-              text="RPC Service"
+              text={lang.t(`home.rpcService`)}
             />
             <Label
               {...setPlatformStyle(
@@ -177,7 +177,7 @@ function Home() {
                 }
               )}
               src="/images/home_node.png"
-              text="Node Operations"
+              text={lang.t(`home.node_operations`)}
             />
           </Flex>
           <Text
@@ -197,7 +197,7 @@ function Home() {
             )}
             fontWeight="bold"
           >
-            Real-time Analytics for Blockchains
+            {lang.t(`home.subject`)}
           </Text>
           <Text
             textAlign="center"
@@ -219,9 +219,7 @@ function Home() {
               }
             )}
           >
-            ChainAnalytics is an analytics protocol for blockchain networks like
-            Ethereum, BSC, IoTeX. We committed to provide advanced analytics for
-            explorers, Dapps, and research analysis.
+           {lang.t(`home.desc`)}
           </Text>
           <Flex
             maxW="100%"
@@ -233,9 +231,9 @@ function Home() {
               { mt: "36px" }
             )}
           >
-            <Statistics title="GB Ready to serve" value="200" />
+            <Statistics title={lang.t(`home.gb_to_serve`)} value="200" />
             <Statistics
-              title="QuerIES served "
+              title={lang.t(`home.queries_served`)}
               value="200K"
               {...setPlatformStyle(
                 {
@@ -245,7 +243,7 @@ function Home() {
               )}
             />
             <Statistics
-              title="Dapps integrated"
+              title={lang.t(`home.dapps_intergated`)}
               value="10"
               {...setPlatformStyle(
                 {
@@ -293,7 +291,7 @@ function Home() {
                 borderRadius:"23px"
               })}
             >
-              <Link href={publicConfig.docsUrl}>Learn more</Link>
+              <Link href={publicConfig.docsUrl}>{lang.t(`home.learn_more`)}</Link>
             </Button>
           </Flex>
         </Flex>
