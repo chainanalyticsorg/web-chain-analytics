@@ -12,7 +12,7 @@ import MobileHeader from './Mobile'
      <Flex justifyContent="space-between" {...props}>
         <Flex align="center">
             <Image w="36px" h="36px" src="/images/logo.png" alt=""/>
-            <Text fontStyle="Bold" fontSize="24px" ml="15px" lineHeight="29px">
+            <Text fontWeight="Bold" fontSize="24px" ml="15px" lineHeight="29px">
                 ChainAnalytics
             </Text>
         </Flex>

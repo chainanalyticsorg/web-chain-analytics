@@ -20,7 +20,7 @@ function Header(props: FlexProps) {
     <Flex justifyContent="space-between" p="0 12px 0 15px" {...props}>
       <Flex align="center">
         <Image w="18px" h="18px" src="/images/logo.png" alt="" />
-        <Text fontStyle="Bold" fontSize="12px" ml="8px" lineHeight="15px">
+        <Text fontWeight="Bold" fontSize="12px" ml="8px" lineHeight="15px">
           ChainAnalytics
         </Text>
       </Flex>

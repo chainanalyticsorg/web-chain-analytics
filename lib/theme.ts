@@ -1,4 +1,5 @@
 import { extendTheme, withDefaultColorScheme, IconButton } from "@chakra-ui/react"
+import "@fontsource/montserrat"
 
 export const theme = extendTheme(
   withDefaultColorScheme({

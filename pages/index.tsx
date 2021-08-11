@@ -21,6 +21,7 @@ const Label = ({ src, text, ...restProps }) => {
   return (
     <Flex
       align="center"
+      fontWeight={500}
       bg="rgba(232, 216, 253, 0.2)"
       color="primary"
       borderRadius="20px"
