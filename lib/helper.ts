@@ -3,7 +3,7 @@ import BN from "bignumber.js"
 import Bowser from "bowser"
 
 export const helper = {
-  browser: Bowser.getParser(window.navigator.userAgent),
+  browser: () => Bowser.getParser(window.navigator.userAgent),
   promise: {
     async sleep(ms) {
       return new Promise((resolve) => setTimeout(resolve, ms))

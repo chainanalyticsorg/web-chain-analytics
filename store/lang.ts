@@ -1,7 +1,7 @@
 import axios from "axios"
-import { _ } from "app/lib/lodash"
+import { _ } from "../lib/lodash"
 import { makeAutoObservable } from "mobx"
-import en from "../../public/translations/en.json"
+import en from "../public/translations/en.json"
 
 type Translation = typeof en
 
@@ -52,7 +52,7 @@ export class LangStore {
   }
 
   t(str: keyof Translation, data?: any) {
-    let processed = this.translation[str] || this.translations.en[str]
+    let processed: string | undefined = this.translation[str] || this.translations.en[str]
     if (!processed) {
       return str
     }

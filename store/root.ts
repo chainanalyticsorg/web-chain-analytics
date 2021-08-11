@@ -1,7 +1,7 @@
 import { LangStore } from "./lang"
-import { GodStore } from "./god"
+import { Base } from "./base"
 
 export class RootStore {
   lang = new LangStore()
-  god = new GodStore(this)
+  base = new Base()
 }
