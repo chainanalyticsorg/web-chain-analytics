@@ -39,7 +39,11 @@ function Header(props: FlexProps) {
             }
             variant="ghost"
           />
-          <MenuList w="150px" minWidth={0} p={0} borderRadius={0}>
+          <MenuList w="150px" minWidth={0} p={0} borderRadius={0} sx={{
+              '.chakra-menu__menuitem:active': {
+                 background: "primary"
+              }
+          }}>
             <MenuItem  h="32px">
               <Link  href={publicConfig.docsUrl}>Docs</Link>
             </MenuItem>
