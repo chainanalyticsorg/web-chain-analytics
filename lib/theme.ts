@@ -1,5 +1,6 @@
 import { extendTheme, withDefaultColorScheme, IconButton } from "@chakra-ui/react"
-import "@fontsource/montserrat"
+import "@fontsource/montserrat/500.css"
+import "@fontsource/montserrat/700.css"
 
 export const theme = extendTheme(
   withDefaultColorScheme({
@@ -31,6 +32,7 @@ export const theme = extendTheme(
       },
     },
     styles: {
+      
       global: {
         html: {
           scrollBehavior: "smooth",

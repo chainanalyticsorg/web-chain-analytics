@@ -116,8 +116,9 @@ function Home() {
     <>
       <Flex
         justifyContent="center"
-        bg="url(/images/home_bg.png)"
+        bg="url(/images/home_bg.png) no-repeat"
         minH="100vh"
+        backgroundSize="100% 100%"
         overflowX="hidden"
       >
         <Flex
@@ -126,12 +127,13 @@ function Home() {
           w="100%"
           maxW="6xl"
           overflowX="hidden"
+          backgroundSize="100% 100%"
           {...setPlatformStyle(
             {
-              bg: "url(/images/home_mobile_bg.png)",
+              bg: "url(/images/home_mobile_bg.png) no-repeat",
             },
             {
-              bg: "url(/images/home_pc_bg.png)",
+              bg: "url(/images/home_pc_bg.png) no-repeat",
             }
           )}
         >
