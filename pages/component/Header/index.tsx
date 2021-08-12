@@ -1,4 +1,4 @@
-import { Image, Flex, Text, Link, Button, FlexProps } from "@chakra-ui/react";
+import { Image, Flex, Text, Link, Button, FlexProps, chakra } from "@chakra-ui/react";
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { publicConfig } from "../../../config/public";
@@ -19,7 +19,7 @@ import MobileHeader from './Mobile'
         <Flex align="center">
             <Link href={publicConfig.docsUrl}>Docs</Link>
             <Link ml="40px" href={publicConfig.githubUrl}>GitHub</Link>
-            <Button ml="40px" fontSize="14px" borderRadius="23px" variant="outline"><Link href={publicConfig.iotexMainnetUrl}>IoTeX Mainnet</Link></Button>
+            <chakra.a href={publicConfig.iotexMainnetUrl}> <Button ml="40px" fontSize="14px" borderRadius="23px" variant="outline">IoTeX Mainnet</Button></chakra.a>
         </Flex>
      </Flex>
   )

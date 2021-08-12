@@ -38,6 +38,9 @@ export const theme = extendTheme(
           scrollBehavior: "smooth",
           height: "100%",
         },
+        body: {
+          "-webkit-tap-highlight-color": "transparent"
+        } ,
         ".body": {
           overflowY: "scroll", // Always show scrollbar to avoid flickering
         },

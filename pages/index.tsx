@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Center,
+  chakra,
   Flex,
   Image,
   Link,
@@ -161,7 +162,10 @@ function Home() {
               }
             )}
           >
-            <Label src="/images/home_analytics.png" text={lang.t(`home.analytics_data`)} />
+            <Label
+              src="/images/home_analytics.png"
+              text={lang.t(`home.analytics_data`)}
+            />
             <Label
               {...setPlatformStyle(
                 {},
@@ -218,11 +222,11 @@ function Home() {
                 mt: "24px",
                 fontSize: "16px",
                 lineHeight: "24px",
-                maxW: "633px",
+                maxW: "800px",
               }
             )}
           >
-           {lang.t(`home.desc`)}
+            {lang.t(`home.desc`)}
           </Text>
           <Flex
             maxW="100%"
@@ -256,46 +260,72 @@ function Home() {
               )}
             />
           </Flex>
-          <Flex  {
-            ...setPlatformStyle({
-              flexDirection: "column",
-              marginTop:"33px",
-              alignItems: "center",
-              justifyContent: 'center',
-              w: "100%",
-              p: "0 12px"
-            }, {
-              mt:"60px"
-            })
-          }>
-            <Button {...setPlatformStyle({
-              w: "100%",
-              fontSize: "17px",
-              h: "44px",
-              borderRadius: "20px",
-            }, {
-              h: "46px",
-              borderRadius:"23px" 
-            })}><Link href={publicConfig.iotexMainnetUrl}>IoTeX Mainnet</Link></Button>
-            <Button
-              onClick={() => {}}
-              variant="outline"
-              bg="white"
-              borderWidth={0}
-              {...setPlatformStyle({
+          <Flex
+            {...setPlatformStyle(
+              {
+                flexDirection: "column",
+                marginTop: "33px",
+                alignItems: "center",
+                justifyContent: "center",
                 w: "100%",
-                mt: "21px",
-                fontSize: "17px",
-                h: "44px",
-                borderRadius: "20px",
-              }, {
-                ml:"35px",
-                h: "46px",
-                borderRadius:"23px"
-              })}
+                p: "0 12px",
+              },
+              {
+                mt: "60px",
+              }
+            )}
+          >
+            <chakra.a href={publicConfig.iotexMainnetUrl}  {...setPlatformStyle({w: "100%"}, {})}>
+              <Button
+                {...setPlatformStyle(
+                  {
+                    w: "100%",
+                    fontSize: "17px",
+                    h: "44px",
+                    borderRadius: "20px",
+                  },
+                  {
+                    h: "46px",
+                    borderRadius: "23px",
+                  }
+                )}
+              >
+                IoTeX Mainnet
+              </Button>
+            </chakra.a>
+            <chakra.a
+              href={publicConfig.docsUrl}
+              {...setPlatformStyle(
+                {
+                  mt: "21px",
+                  w: "100%",
+                },
+                {
+                  ml: "35px",
+                }
+              )}
             >
-              <Link href={publicConfig.docsUrl}>{lang.t(`home.learn_more`)}</Link>
-            </Button>
+              <Button
+                variant="outline"
+                bg="white"
+                borderWidth={0}
+                {...setPlatformStyle(
+                  {
+                    w: "100%",
+
+                    fontSize: "17px",
+                    h: "44px",
+                    borderRadius: "20px",
+                  },
+                  {
+                    h: "46px",
+                    borderRadius: "23px",
+                  }
+                )}
+              >
+                {lang.t(`home.learn_more`)}
+              </Button>
+            </chakra.a>
           </Flex>
         </Flex>
       </Flex>
