@@ -16,6 +16,7 @@ import { useStore } from "../store";
 import { observer } from "mobx-react-lite";
 import { usePlatform } from "../lib/react-hooks";
 import { publicConfig } from "../config/public";
+import { Helmet } from "react-helmet";
 
 const Label = ({ src, text, ...restProps }) => {
   const setPlatformStyle = usePlatform();
@@ -115,6 +116,12 @@ function Home() {
   }, []);
   return (
     <>
+      <Helmet>
+        <meta name="keywords" content="ChainAnalytics, Ethereum Analytics, IoTeX Analytics" />
+        <title>
+          ChainAnalytics: analytics protocol for blockchain networks.
+        </title>
+      </Helmet>
       <Flex
         justifyContent="center"
         bg="url(/images/home_bg.png) no-repeat"
@@ -238,10 +245,10 @@ function Home() {
               { mt: "36px" }
             )}
           >
-            <Statistics title={lang.t(`home.gb_to_serve`)} value="200" />
+            <Statistics title={lang.t(`home.gb_to_serve`)} value="500+" />
             <Statistics
               title={lang.t(`home.queries_served`)}
-              value="200K"
+              value="2M+"
               {...setPlatformStyle(
                 {
                   mt: "32px",
@@ -251,7 +258,7 @@ function Home() {
             />
             <Statistics
               title={lang.t(`home.dapps_intergated`)}
-              value="10"
+              value="10+"
               {...setPlatformStyle(
                 {
                   mt: "32px",
@@ -275,7 +282,10 @@ function Home() {
               }
             )}
           >
-            <chakra.a href={publicConfig.iotexMainnetUrl}  {...setPlatformStyle({w: "100%"}, {})}>
+            <chakra.a
+              href={publicConfig.iotexMainnetUrl}
+              {...setPlatformStyle({ w: "100%" }, {})}
+            >
               <Button
                 {...setPlatformStyle(
                   {
