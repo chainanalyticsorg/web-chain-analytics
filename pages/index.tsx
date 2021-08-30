@@ -245,7 +245,7 @@ function Home() {
               { mt: "36px" }
             )}
           >
-            <Statistics title={lang.t(`home.gb_to_serve`)} value="200" />
+            <Statistics title={lang.t(`home.gb_to_serve`)} value="500+" />
             <Statistics
               title={lang.t(`home.queries_served`)}
               value="200K"
@@ -258,7 +258,7 @@ function Home() {
             />
             <Statistics
               title={lang.t(`home.dapps_intergated`)}
-              value="10"
+              value="10+"
               {...setPlatformStyle(
                 {
                   mt: "32px",
