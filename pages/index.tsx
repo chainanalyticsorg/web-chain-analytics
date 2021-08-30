@@ -248,7 +248,7 @@ function Home() {
             <Statistics title={lang.t(`home.gb_to_serve`)} value="500+" />
             <Statistics
               title={lang.t(`home.queries_served`)}
-              value="200K"
+              value="2M+"
               {...setPlatformStyle(
                 {
                   mt: "32px",
