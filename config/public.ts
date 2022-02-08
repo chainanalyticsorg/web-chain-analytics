@@ -5,5 +5,6 @@ export const publicConfig = {
   apiToken: "test",
   githubUrl: "https://github.com/chainanalyticsorg",
   iotexMainnetUrl: "https://iotex-mainnet.chainanalytics.org/",
-  docsUrl: "https://docs.chainanalytics.org/"
+  docsUrl: "https://docs.chainanalytics.org/",
+  statsUrl: "https://stats.chainanalytics.org/"
 }

@@ -17,7 +17,8 @@ import MobileHeader from './Mobile'
             </Text>
         </Flex>
         <Flex align="center">
-            <Link href={publicConfig.docsUrl}>Docs</Link>
+            <Link href={publicConfig.statsUrl}>Stats</Link>
+            <Link ml="40px" href={publicConfig.docsUrl}>Docs</Link>
             <Link ml="40px" href={publicConfig.githubUrl}>GitHub</Link>
             <chakra.a href={publicConfig.iotexMainnetUrl}> <Button ml="40px" fontSize="14px" borderRadius="23px" variant="outline">IoTeX Mainnet</Button></chakra.a>
         </Flex>

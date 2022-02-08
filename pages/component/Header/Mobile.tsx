@@ -59,7 +59,14 @@ function Header(props: FlexProps) {
             }}
           >
             <MenuItem h="32px">
-              <chakra.a w="100%" href={publicConfig.docsUrl}>Docs</chakra.a>
+              <chakra.a w="100%" href={publicConfig.statsUrl}>
+                Stats
+              </chakra.a>
+            </MenuItem>
+            <MenuItem h="32px">
+              <chakra.a w="100%" href={publicConfig.docsUrl}>
+                Docs
+              </chakra.a>
             </MenuItem>
             <MenuItem h="32px">
               <chakra.a href={publicConfig.githubUrl}>GitHub</chakra.a>
